@@ -1,0 +1,132 @@
+{
+	"result": [
+		{
+			"place_id": "SqpTUT_Lxw3041037",
+			"seoid": "SqpTUT_Lxw3041037",
+			"sfid": "5c362966-bd53-5ad4-e053-0d05000aa265",
+			"description": "Midrand, Gauteng",
+			"title": "Midrand",
+			"types": ["locality", "political"]
+		},
+		{
+			"place_id": "nwd2ZQlV_lCdJqZDC-P5E23HUHTnTj",
+			"seoid": "nwd2ZQlV_lCdJqZDC-P5E23HUHTnTj",
+			"sfid": "89bae207-9c4f-3f1f-e053-0500710a63f5",
+			"description": "Midrand Village, Olifantsfontein, Gauteng",
+			"title": "Midrand Village",
+			"types": ["sublocality_level_1", "sublocality", "political"]
+		},
+		{
+			"place_id": "sG784mtA_HFjgEIzw-BIPc1bOvyvGO",
+			"seoid": "sG784mtA_HFjgEIzw-BIPc1bOvyvGO",
+			"sfid": "5c3658ff-b4ef-5ebd-e053-0d05000aa120",
+			"description": "Midrand Ext 10, Halfway House, Gauteng",
+			"title": "Midrand Ext 10",
+			"types": ["postcode_locality"]
+		},
+		{
+			"place_id": "4qrpcSlr_L9WGOYNU-ow7m356HpW6N",
+			"seoid": "4qrpcSlr_L9WGOYNU-ow7m356HpW6N",
+			"sfid": "5c3658ff-b6ec-5ebd-e053-0d05000aa120",
+			"description": "Midrand Ext 14, Halfway House, Gauteng",
+			"title": "Midrand Ext 14",
+			"types": ["postcode_locality"]
+		},
+		{
+			"place_id": "ZAGGi29F_lTeNX2eo-qHCgjsi5kDO1",
+			"seoid": "ZAGGi29F_lTeNX2eo-qHCgjsi5kDO1",
+			"sfid": "5c3658ff-b748-5ebd-e053-0d05000aa120",
+			"description": "Midrand Ext 7, Halfway House, Gauteng",
+			"title": "Midrand Ext 7",
+			"types": ["postcode_locality"]
+		},
+		{
+			"place_id": "3KQ11pnF_eRq8ZrLl-Xy95Ps9VNOIN",
+			"seoid": "3KQ11pnF_eRq8ZrLl-Xy95Ps9VNOIN",
+			"sfid": "87969da8-73a6-551a-e053-0500710a689c",
+			"description": "South Africa",
+			"title": "South Africa",
+			"types": ["country", "political"]
+		},
+		{
+			"place_id": "B4BMHmT2Dn_NqSAnWWk-Lpk4064d295a",
+			"seoid": "B4BMHmT2Dn_NqSAnWWk-Lpk4064d295a",
+			"sfid": "5c36590a-4a1e-5ebd-e053-0d05000aa120",
+			"description": "South Africa Avenue, Far East Bank, Sandton, Gauteng, 2090",
+			"title": "South Africa Avenue",
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "he3ZnhSOCH_yforNqtF-ZtT404641F39",
+			"seoid": "he3ZnhSOCH_yforNqtF-ZtT404641F39",
+			"sfid": "5c365936-f5fb-5ebd-e053-0d05000aa120",
+			"description": "South Africa Drive, Sonnedal AH, Roodepoort, Gauteng",
+			"title": "South Africa Drive",
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "N8225XmSe9_tCvNIyrQh-uoX40B63404UOx",
+			"seoid": "N8225XmSe9_tCvNIyrQh-uoX40B63404UOx",
+			"sfid": "5c365909-2656-5ebd-e053-0d05000aa120",
+			"description": "South Africa Drive, Cosmo City, Roodepoort, Gauteng, 2188",
+			"title": "South Africa Drive",
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "fn5lpgKui2_rUFfePoL-mZH404626460",
+			"seoid": "fn5lpgKui2_rUFfePoL-mZH404626460",
+			"sfid": "5c365936-e990-5ebd-e053-0d05000aa120",
+			"description": "South Africa Street, Ethafeni, Tembisa, Gauteng, 1632",
+			"title": "South Africa Street",
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "ZSV4x7_mVI304103MVi",
+			"seoid": "ZSV4x7_mVI304103MVi",
+			"sfid": "5c362966-bd1c-5ad4-e053-0d05000aa265",
+			"description": "Johannesburg South, Gauteng",
+			"title": "Johannesburg South",
+			"types": ["locality", "political"]
+		},
+		{
+			"place_id": "7oEht1_OUH3041225",
+			"seoid": "7oEht1_OUH3041225",
+			"sfid": "5c362966-c11c-5ad4-e053-0d05000aa265",
+			"description": "Johannesburg, Gauteng",
+			"title": "Johannesburg",
+			"types": ["locality", "political"]
+		},
+		{
+			"place_id": "07pqu7_HVh3053354",
+			"seoid": "07pqu7_HVh3053354",
+			"sfid": "5c362966-f0c8-5ad4-e053-0d05000aa265",
+			"description": "Johandeo AH, Emfuleni Rural, Gauteng, 1982",
+			"title": "Johandeo AH",
+			"types": ["sublocality_level_1", "sublocality", "political"]
+		},
+		{
+			"place_id": "5QkH6F_NJY3070234",
+			"seoid": "5QkH6F_NJY3070234",
+			"sfid": "5c362967-3097-5ad4-e053-0d05000aa265",
+			"description": "Johandeo, Emfuleni Rural, Gauteng, 1908",
+			"title": "Johandeo",
+			"types": ["sublocality_level_1", "sublocality", "political"]
+		},
+		{
+			"place_id": "8bFbLz_ovO3071809",
+			"seoid": "8bFbLz_ovO3071809",
+			"sfid": "5c362966-c5d8-5ad4-e053-0d05000aa265",
+			"description": "Johannesburg International Airport, Kempton Park, Gauteng, 1627",
+			"title": "Johannesburg International Airport",
+			"types": [
+				"sublocality_level_1",
+				"sublocality",
+				"colloquial_area",
+				"political"
+			]
+		}
+	],
+	"code": 200,
+	"message": "OK",
+	"source": "places.api-autocomplete"
+}

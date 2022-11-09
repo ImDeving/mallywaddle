@@ -1,5 +1,6 @@
 import express, { NextFunction, Request, Response } from "express";
 import { HttpException } from "../common/httpException";
+import { default as autoCompleteService } from "../services/autoComplete.service";
 
 export default class AutoCompleteController {
 	public static async getPlaces(
@@ -9,31 +10,26 @@ export default class AutoCompleteController {
 	) {
 		const searchString = req.url.split("?")[1];
 		const searchParams = new URLSearchParams(searchString);
-		const queryParam = searchParams.get("query");
+		const queryParam = searchParams.get("query")?.trim();
 
+		// 1. If queryParam = null, throw BadRequest HttpError
 		if (!queryParam) {
-			// const error = new HttpException(
-			// 	"Invalid request (bad request; a required parameter is missing; invalid version; invalid format)",
-			// 	400
-			// );
+			// 1.1 queryParam = null, throwing BadRequest HttpError
 			const error = new HttpException(
 				"BadRequest",
-				"Invalid request (bad request; a required parameter is missing; invalid version; invalid format)"
+				"Missing required request parameters: [query]"
 			);
 			return next(error);
 		}
 
-		console.log("/n");
-		console.log(searchParams.get("query"));
-		console.log("/n");
-
-		// Iterating the search parameters
-		for (const p of searchParams) {
-			console.log(p);
+		// 2. Make call to API
+		try {
+			const places = await autoCompleteService.getPlaces(queryParam);
+			return res.status(200).json({ data: places, message: "Ok" });
+		} catch (error) {
+			console.log("error: ", error);
+			// 2.1 Make call to API failed
+			return next(error);
 		}
-
-		res.status(200).json({
-			success: true,
-		});
 	}
 }
