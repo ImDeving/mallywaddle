@@ -1,9 +1,2 @@
-import { Request } from "express";
-
-export interface IReq<T = void> extends Request {
-	body: T;
-}
-
-export type Errors<T> = {
-	[P in keyof T]: T[P];
-};
+export { Errors, IReq } from "./app.types";
+export { Places } from "./api.types";

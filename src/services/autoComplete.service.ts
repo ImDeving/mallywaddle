@@ -1,33 +1,10 @@
 import { HttpException } from "../common/httpException";
 import { config } from "../config";
+import { IAutoCompleteService } from "../declarations/interfaces";
+import { Places } from "../declarations/types";
 import data from "../stubs/data/autoComplete.response.json";
 
 const baseURL: string = config.envVars.api.map.baseURL || "";
-// {
-// 	apiKeyName: config.envVars.api.map.apiKeyName,
-// 	apiKeyValue: config.envVars.api.map.apiKeyValue,
-// };
-
-interface AfriGISResultType {
-	place_id: string;
-	seoid: string;
-	sfid: string;
-	description: string;
-	title: string;
-	types: string[];
-}
-
-interface Places {
-	place_id: string;
-	description: string;
-	title: string;
-	types: string[];
-}
-
-abstract class IAutoCompleteService {
-	protected static baseURL: string;
-	public static getPlaces: (query: string) => Promise<Places[]>;
-}
 
 export default class AutoCompleteService implements IAutoCompleteService {
 	#baseURL = baseURL;
