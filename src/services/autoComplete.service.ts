@@ -1,8 +1,7 @@
 import { HttpException } from "../common/httpException";
 import { config } from "../config";
 import { IAutoCompleteService } from "../declarations/interfaces";
-import { Place } from "../declarations/types";
-import { APIResult } from "../declarations/types/api.types";
+import { Place, AutoCompleteResult } from "../declarations/types";
 import data from "../stubs/data/autoComplete.response.json";
 
 const baseURL: string = config.envVars.api.map.baseURL || "";
@@ -18,11 +17,11 @@ export default class AutoCompleteService implements IAutoCompleteService {
 		// 2.1 Throw error if request attempt fails
 
 		// 3. Return result
-		let result: APIResult;
-		result = await new Promise<APIResult>((resolve, reject) => {
+		let result: AutoCompleteResult;
+		result = await new Promise<AutoCompleteResult>((resolve, reject) => {
 			let results: Place[] = [];
 			const test = setTimeout(() => {
-				let apiResult: APIResult = data;
+				let apiResult: AutoCompleteResult = data;
 				data.result.map((place) => {
 					if (
 						place.title.toLowerCase().includes(query.toLowerCase()) ||

@@ -7,23 +7,33 @@ export interface Place {
 	types: string[];
 }
 
-export interface APIResult {
+export interface GeoCodedLocation {
+	place_id: string;
+	seoid: string;
+	sfid: string;
+	formatted_address: string;
+	confidence: {
+		confidence_id: number;
+		description: string;
+	};
+	location: {
+		lat: number;
+		lng: number;
+	};
+	types: string[];
+}
+
+export interface AutoCompleteResult {
 	code: number;
 	message: string;
 	source: string;
 	result: Place[];
 }
 
-interface test {
-	result: {
-		place_id: string;
-		seoid: string;
-		sfid: string;
-		description: string;
-		title: string;
-		types: string[];
-	}[];
+export interface GeoCodeResult {
 	code: number;
+	number_of_records: number;
 	message: string;
 	source: string;
+	result: Place[];
 }

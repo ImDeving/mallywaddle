@@ -1,0 +1,158 @@
+{
+	"number_of_records": 10,
+	"result": [
+		{
+			"place_id": "L4s9ur_rkl3041036",
+			"seoid": "L4s9ur_rkl3041036",
+			"sfid": "5c362966-bd52-5ad4-e053-0d05000aa265",
+			"formatted_address": "Soweto, Gauteng",
+			"confidence": {
+				"confidence_id": 8,
+				"description": "Centre of locality boundary"
+			},
+			"location": {
+				"lat": -26.238176,
+				"lng": 27.835275
+			},
+			"types": ["locality", "political"]
+		},
+		{
+			"place_id": "6Yxd4t_yZX3052F0a",
+			"seoid": "6Yxd4t_yZX3052F0a",
+			"sfid": "5c362966-f247-5ad4-e053-0d05000aa265",
+			"formatted_address": "Soweto, Inanda, KwaZulu-Natal",
+			"confidence": {
+				"confidence_id": 7,
+				"description": "Centre of sublocality boundary"
+			},
+			"location": {
+				"lat": -29.718314,
+				"lng": 30.935303
+			},
+			"types": ["sublocality_level_1", "sublocality", "political"]
+		},
+		{
+			"place_id": "p7KBTUJ3eO_FewzMLlMN-HMU40hmU3d3658",
+			"seoid": "p7KBTUJ3eO_FewzMLlMN-HMU40hmU3d3658",
+			"sfid": "5c365909-88dc-5ebd-e053-0d05000aa120",
+			"formatted_address": "Soweto Avenue, Lower Langefontein, Molweni, KwaZulu-Natal",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -29.731366,
+				"lng": 30.874412
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "BJa35PctYi_byMXBWCw-KjL4052e214b",
+			"seoid": "BJa35PctYi_byMXBWCw-KjL4052e214b",
+			"sfid": "5c36593d-d8f7-5ebd-e053-0d05000aa120",
+			"formatted_address": "Soweto Avenue, Midros, Middelburg, Eastern Cape, 5900",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -31.504651,
+				"lng": 25.023338
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "flwYGq7vO0_SvoUPvrYN-oTv40oTv3OTV614OTV",
+			"seoid": "flwYGq7vO0_SvoUPvrYN-oTv40oTv3OTV614OTV",
+			"sfid": "5c365909-9de9-5ebd-e053-0d05000aa120",
+			"formatted_address": "Soweto Grove, Ntuzuma-E, Ntuzuma, KwaZulu-Natal, 4359",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -29.720134,
+				"lng": 30.929617
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "Qj1OBLz4tY_VrBnaBVX-MmY40319594F",
+			"seoid": "Qj1OBLz4tY_VrBnaBVX-MmY40319594F",
+			"sfid": "5c365922-ed05-5ebd-e053-0d05000aa120",
+			"formatted_address": "Soweto Grove, Soweto, Inanda, KwaZulu-Natal, 4309",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -29.718662,
+				"lng": 30.933609
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "jRQTDsCSH9_WVqVbMox-wII405101558",
+			"seoid": "jRQTDsCSH9_WVqVbMox-wII405101558",
+			"sfid": "5c365939-53c4-5ebd-e053-0d05000aa120",
+			"formatted_address": "Soweto Highway, Diepkloof Zone 1, Diepkloof, Gauteng, 1862",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.234331,
+				"lng": 27.941669
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "edkwtR7HJ4_CYaqtmsRDK-ryM50202155E14",
+			"seoid": "edkwtR7HJ4_CYaqtmsRDK-ryM50202155E14",
+			"sfid": "5ead1c7a-67be-ce33-e053-0d05000ab08a",
+			"formatted_address": "Soweto Highway, Diepkloof Zone 3, Diepkloof, Gauteng, 1862",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.233069,
+				"lng": 27.95133
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "aJJ6jCAcmw_4BNVs27G-oQULKZUJK1pT",
+			"seoid": "aJJ6jCAcmw_4BNVs27G-oQULKZUJK1pT",
+			"sfid": "a689c558-b2a3-255a-e053-0500710ab883",
+			"formatted_address": "Soweto Highway, Diepkloof Zone 4, Diepkloof, Gauteng, 1862",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.233435,
+				"lng": 27.957831
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "oIcYTxT1qp_Z5VHvVpP-8OGrDvaQM16Q",
+			"seoid": "oIcYTxT1qp_Z5VHvVpP-8OGrDvaQM16Q",
+			"sfid": "b5268b8b-3675-7658-e053-0500710a71b9",
+			"formatted_address": "Soweto Highway, Johannesburg South, Gauteng",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.233223,
+				"lng": 27.968286
+			},
+			"types": ["route_level_1", "route"]
+		}
+	],
+	"code": 200,
+	"message": "OK",
+	"source": "geocode.api-address"
+}
