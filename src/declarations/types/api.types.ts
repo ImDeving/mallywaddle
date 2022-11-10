@@ -35,5 +35,5 @@ export interface GeoCodeResult {
 	number_of_records: number;
 	message: string;
 	source: string;
-	result: Place[];
+	result: GeoCodedLocation[];
 }

@@ -2,6 +2,326 @@
 	"number_of_records": 10,
 	"result": [
 		{
+			"place_id": "7oEht1_OUH3041225",
+			"seoid": "7oEht1_OUH3041225",
+			"sfid": "5c362966-c11c-5ad4-e053-0d05000aa265",
+			"formatted_address": "Johannesburg, Gauteng",
+			"confidence": {
+				"confidence_id": 8,
+				"description": "Centre of locality boundary"
+			},
+			"location": {
+				"lat": -26.172001,
+				"lng": 28.063639
+			},
+			"types": ["locality", "political"]
+		},
+		{
+			"place_id": "czzVPw_hXk3041b1Hxk",
+			"seoid": "czzVPw_hXk3041b1Hxk",
+			"sfid": "5c362966-c26d-5ad4-e053-0d05000aa265",
+			"formatted_address": "Johannesburg, Johannesburg, Gauteng, 2000",
+			"confidence": {
+				"confidence_id": 7,
+				"description": "Centre of sublocality boundary"
+			},
+			"location": {
+				"lat": -26.200403,
+				"lng": 28.040852
+			},
+			"types": ["sublocality_level_1", "sublocality", "political"]
+		},
+		{
+			"place_id": "U7Xq2b_tPq3023125",
+			"seoid": "U7Xq2b_tPq3023125",
+			"sfid": "5c362967-8ff9-5ad4-e053-0d05000aa265",
+			"formatted_address": "Johannesburg, Johannesburg, Gauteng",
+			"confidence": {
+				"confidence_id": 6,
+				"description": "Centre of sublocality boundary"
+			},
+			"location": {
+				"lat": -26.193375,
+				"lng": 28.04327
+			},
+			"types": [
+				"sublocality_level_2",
+				"sublocality",
+				"colloquial_area",
+				"political"
+			]
+		},
+		{
+			"place_id": "rerejg6d9S_ZMZDePZu-IrO405172750",
+			"seoid": "rerejg6d9S_ZMZDePZu-IrO405172750",
+			"sfid": "5c36593e-e25e-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Arcon Park, Vereeniging, Gauteng, 1939",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.625262,
+				"lng": 27.935668
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "MPc553VXFE_vNmjutIb-kvG405102d39",
+			"seoid": "MPc553VXFE_vNmjutIb-kvG405102d39",
+			"sfid": "5c36593a-e338-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Duncanville, Vereeniging, Gauteng, 1939",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.656635,
+				"lng": 27.935616
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "98M488Y95R_XCJSscgy-XZJ40544200E",
+			"seoid": "98M488Y95R_XCJSscgy-XZJ40544200E",
+			"sfid": "5c365944-3fdf-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Evander, Evander, Mpumalanga, 2280",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.462681,
+				"lng": 29.120773
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "z9mIMc0hfD_voWqdnKE-uXX405392B57",
+			"seoid": "z9mIMc0hfD_voWqdnKE-uXX405392B57",
+			"sfid": "5c36593d-9068-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Ironsyde, Vereeniging, Gauteng, 1984",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.530075,
+				"lng": 27.895798
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "WvtLap7EU0_RVUigBgR-rLN405370f10",
+			"seoid": "WvtLap7EU0_RVUigBgR-rLN405370f10",
+			"sfid": "5c36593b-d1cb-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Kew, Johannesburg, Gauteng, 2090",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.133669,
+				"lng": 28.095561
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "94WCjXg3To_EHDslvnQj-OOk40OOK3D0B2f",
+			"seoid": "94WCjXg3To_EHDslvnQj-OOk40OOK3D0B2f",
+			"sfid": "5c365909-9ccf-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, La Rochelle, Johannesburg South, Gauteng, 2190",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.242708,
+				"lng": 28.055334
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "CIj6x0uqFv_TxgiwUNR-zwk405303f37",
+			"seoid": "CIj6x0uqFv_TxgiwUNR-zwk405303f37",
+			"sfid": "5c36593f-3c1e-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannesburg Road, Lyndhurst, Johannesburg, Gauteng, 2192",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.127772,
+				"lng": 28.104637
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "rSp8a8v4Uk_krliRQwt-WUM405132B5B",
+			"seoid": "rSp8a8v4Uk_krliRQwt-WUM405132B5B",
+			"sfid": "5c365938-f6d2-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Drive, Hennopspark, Centurion, Gauteng, 0157",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -25.864317,
+				"lng": 28.163547
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "FgW4bJ7m6J_vZzABzar-rqp4052d4036",
+			"seoid": "FgW4bJ7m6J_vZzABzar-rqp4052d4036",
+			"sfid": "5c36593d-823f-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Road, Albertville, Randburg, Gauteng, 2195",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.17025,
+				"lng": 27.973972
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "VKOTZVXtoI_LAMNTxpD-hTQ4052htq4639",
+			"seoid": "VKOTZVXtoI_LAMNTxpD-hTQ4052htq4639",
+			"sfid": "5c36593b-f52f-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Road, Harmoniesrus, Vereeniging, Gauteng, 1929",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.602084,
+				"lng": 27.924261
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "EYy11PXtq5_lxcIVdJo-zVg405340F2B",
+			"seoid": "EYy11PXtq5_lxcIVdJo-zVg405340F2B",
+			"sfid": "5c365940-180f-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Road, Loumarina AH, Randfontein, Gauteng, 1759",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.162681,
+				"lng": 27.654582
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "fpxVhT30W9_kZtTACrz-tMJ4050E1256",
+			"seoid": "fpxVhT30W9_kZtTACrz-tMJ4050E1256",
+			"sfid": "5c365938-cca2-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Road, Triomf, Johannesburg, Gauteng, 2092",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.172397,
+				"lng": 27.971196
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "z0qEqZ7av6_FkrNbtNcI-nOt414214noT07",
+			"seoid": "z0qEqZ7av6_FkrNbtNcI-nOt414214noT07",
+			"sfid": "5c365909-bb17-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Street, Coligny, Coligny, North West, 2725",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.32797,
+				"lng": 26.319309
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "0R06tH31gO_ueklKXxL-WyQ405350A33",
+			"seoid": "0R06tH31gO_ueklKXxL-WyQ405350A33",
+			"sfid": "5c365940-7f5a-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Street, Fairland, Randburg, Gauteng, 2170",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.121023,
+				"lng": 27.955197
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "h5n7hmItUh_pPCWMwoJ-Hhv402560343",
+			"seoid": "h5n7hmItUh_pPCWMwoJ-Hhv402560343",
+			"sfid": "5c365921-3b66-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Street, Hillcrest, Wellington, Western Cape, 7655",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -33.656697,
+				"lng": 18.99076
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "8lnsa8NEQh_cUrigJZXu-VSY414222d2B",
+			"seoid": "8lnsa8NEQh_cUrigJZXu-VSY414222d2B",
+			"sfid": "5c365909-cf7e-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Street, Kamma Park, Gqeberha, Eastern Cape, 6070",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -33.970863,
+				"lng": 25.493217
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "ueORWcm7zM_APLqsAkL-qng403022d30",
+			"seoid": "ueORWcm7zM_APLqsAkL-qng403022d30",
+			"sfid": "5c365922-993a-5ebd-e053-0d05000aa120",
+			"formatted_address": "Johannes Street, Kempton Park West, Kempton Park, Gauteng, 1619",
+			"confidence": {
+				"confidence_id": 5,
+				"description": "Arbitrary point on the street"
+			},
+			"location": {
+				"lat": -26.087222,
+				"lng": 28.192157
+			},
+			"types": ["route_level_1", "route"]
+		},
+		{
+			"place_id": "SqpTUT_Lxw3041037",
+			"seoid": "SqpTUT_Lxw3041037",
+			"sfid": "5c362966-bd53-5ad4-e053-0d05000aa265",
+			"formatted_address": "Midrand, Gauteng",
+			"confidence": {
+				"confidence_id": 8,
+				"description": "Centre of locality boundary"
+			},
+			"location": {
+				"lat": -25.997443,
+				"lng": 28.114685
+			},
+			"types": ["locality", "political"]
+		},
+		{
 			"place_id": "L4s9ur_rkl3041036",
 			"seoid": "L4s9ur_rkl3041036",
 			"sfid": "5c362966-bd52-5ad4-e053-0d05000aa265",

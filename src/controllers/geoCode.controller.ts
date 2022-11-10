@@ -1,9 +1,9 @@
 import express, { NextFunction, Request, Response } from "express";
 import { HttpException } from "../common/httpException";
-import { autoCompleteService } from "../services";
+import { geoCodeService } from "../services";
 
-export default class AutoCompleteController {
-	public static async getPlaces(
+export default class GeoCodeController {
+	public static async geoCodeAddress(
 		req: Request,
 		res: Response,
 		next: NextFunction
@@ -24,7 +24,7 @@ export default class AutoCompleteController {
 
 		// 2. Make call to API
 		try {
-			const places = await autoCompleteService.getPlaces(queryParam);
+			const places = await geoCodeService.geoCodeAddress(queryParam);
 			return res.status(200).json(places);
 		} catch (error) {
 			console.log("error: ", error);
