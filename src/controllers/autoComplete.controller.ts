@@ -25,7 +25,7 @@ export default class AutoCompleteController {
 		// 2. Make call to API
 		try {
 			const places = await autoCompleteService.getPlaces(queryParam);
-			return res.status(200).json({ data: places, message: "Ok" });
+			return res.status(200).json(places);
 		} catch (error) {
 			console.log("error: ", error);
 			// 2.1 Make call to API failed

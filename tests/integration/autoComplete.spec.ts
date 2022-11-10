@@ -25,11 +25,11 @@ describe("autoComplete API", () => {
 		);
 		expect(result.status).toEqual(200);
 		expect(result.body.error).toBeUndefined;
-		expect(result.body.data).toBeDefined;
+		expect(result.body.result).toBeDefined;
 		expect(result.body.message).toBeDefined;
 
 		// Test if all the results contain the query string
-		result.body.data.map((place: any) => {
+		result.body.result.map((place: any) => {
 			const condition =
 				place.title.toLowerCase().includes(query.toLowerCase()) ||
 				place.description.toLowerCase().includes(query.toLowerCase());

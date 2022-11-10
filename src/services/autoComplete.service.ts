@@ -1,7 +1,8 @@
 import { HttpException } from "../common/httpException";
 import { config } from "../config";
 import { IAutoCompleteService } from "../declarations/interfaces";
-import { Places } from "../declarations/types";
+import { Place } from "../declarations/types";
+import { APIResult } from "../declarations/types/api.types";
 import data from "../stubs/data/autoComplete.response.json";
 
 const baseURL: string = config.envVars.api.map.baseURL || "";
@@ -17,26 +18,23 @@ export default class AutoCompleteService implements IAutoCompleteService {
 		// 2.1 Throw error if request attempt fails
 
 		// 3. Return result
-		let result: Places[] = [];
-		result = await new Promise<Places[]>((resolve, reject) => {
-			let results: Places[] = [];
+		let result: APIResult;
+		result = await new Promise<APIResult>((resolve, reject) => {
+			let results: Place[] = [];
 			const test = setTimeout(() => {
+				let apiResult: APIResult = data;
 				data.result.map((place) => {
 					if (
 						place.title.toLowerCase().includes(query.toLowerCase()) ||
 						place.description.toLowerCase().includes(query.toLowerCase())
 					) {
-						results.push({
-							place_id: place.place_id,
-							description: place.description,
-							title: place.title,
-							types: place.types,
-						});
+						results.push(place);
 					}
 				});
 
 				if (results.length > 0) {
-					resolve(results);
+					apiResult.result = results;
+					resolve(apiResult);
 				} else {
 					const error = new HttpException("NotFound", "No results found");
 					reject(error);
