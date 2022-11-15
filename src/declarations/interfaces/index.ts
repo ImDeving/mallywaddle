@@ -1,1 +1,5 @@
-export { IAutoCompleteService, IGeoCodeService } from "./api.interfaces";
+export {
+	IAutoCompleteService,
+	IGeoCodeService,
+	IApiAuthService,
+} from "./api.interfaces";

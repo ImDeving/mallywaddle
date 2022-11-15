@@ -1,9 +1,10 @@
 import express, { NextFunction, Request, Response } from "express";
-import { autoComplete, geoCode } from "../controllers";
+import { apiAuth, autoComplete, geoCode } from "../controllers";
 
 const router = express.Router();
 
 router.get("/autocomplete", autoComplete.getPlaces);
 router.get("/geocode", geoCode.geoCodeAddress);
+router.get("/token", apiAuth.getToken);
 
 export default router;

@@ -9,3 +9,8 @@ export abstract class IGeoCodeService {
 	protected static baseURL: string;
 	public static geoCodeAddress: (query: string) => Promise<GeoCodeResult[]>;
 }
+
+export abstract class IApiAuthService {
+	protected static baseURL: string;
+	public static getToken: (query?: string) => Promise<any[]>;
+}
