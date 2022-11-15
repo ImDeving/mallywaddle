@@ -1,3 +1,4 @@
+import { randomBytes } from "crypto";
 import needle from "needle";
 import { HttpException } from "../common/httpException";
 import { config } from "../config";
@@ -14,6 +15,22 @@ const apiSecretValue = config.envVars.api.map.apiSecretValue || "";
 
 export default class ApiAuthService implements IApiAuthService {
 	baseURL = url;
+
+	public static generateAuthCode = async function () {
+		// 1. Generate random string
+		console.log("1. Generate random string");
+		try {
+			const buf = randomBytes(256);
+			const code = buf.toString("hex");
+			console.log(`${buf.length} bytes of random data: ${code}`);
+			return code;
+		} catch (error: any) {
+			// 2.1. Generate random string failed
+			console.log("2.1. Generate random string failed");
+			console.log({ ApiAuthServiceError: error });
+			throw new HttpException("UnKnownError", error?.message);
+		}
+	};
 
 	public static getToken = async function (query?: string) {
 		// 1. Set up request config
