@@ -3,6 +3,15 @@ import dotenv from "dotenv";
 dotenv.config();
 
 /**
+ * Client Env Vars
+ */
+const CLIENT_URL = process.env.CLIENT_URL;
+
+const CLIENT = {
+	url: CLIENT_URL,
+};
+
+/**
  * Server Env Vars
  */
 const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || "localhost";
@@ -54,6 +63,7 @@ const API = {
 const envVars = {
 	server: SERVER,
 	api: API,
+	client: CLIENT,
 };
 
 export default envVars;

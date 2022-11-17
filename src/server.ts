@@ -7,6 +7,7 @@ import router from "./routes";
 import { errorHandler } from "./middleware/error.middleware";
 import { HttpException } from "./common/httpException";
 import { config } from "./config";
+import envVars from "./config/envVars.config";
 
 const limiter = rateLimit({
 	// windowMs: 15 * 60 * 1000, // 15 minutes
@@ -49,6 +50,10 @@ app.set("trust proxy", 1);
 /**
  *  App Configuration
  */
+const corsOptions = {
+	origin: config.envVars.client.url,
+	optionSuccessStatus: 200,
+};
 app.use(cors());
 app.use(express.json());
 
