@@ -54,7 +54,7 @@ const corsOptions = {
 	origin: config.envVars.client.url,
 	optionSuccessStatus: 200,
 };
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 /**
