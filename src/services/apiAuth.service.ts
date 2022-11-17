@@ -3,7 +3,6 @@ import needle from "needle";
 import { HttpException } from "../common/httpException";
 import { config } from "../config";
 import { IApiAuthService } from "../declarations/interfaces";
-import { GeoCodedLocation, GeoCodeResult } from "../declarations/types";
 
 const url = config.envVars.api.map.apiTokenURL || "";
 const apiGrantName = config.envVars.api.map.apiGrantName || "";

@@ -28,6 +28,7 @@ export interface AutoCompleteResult {
 	message: string;
 	source: string;
 	result: Place[];
+	cacheTime: number;
 }
 
 export interface GeoCodeResult {
@@ -36,4 +37,5 @@ export interface GeoCodeResult {
 	message: string;
 	source: string;
 	result: GeoCodedLocation[];
+	cacheTime: number;
 }

@@ -6,11 +6,13 @@ dotenv.config();
  * Server Env Vars
  */
 const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || "localhost";
-const SERVER_PORT: number = parseInt(process.env.PORT as string, 10) || 7000;
+const SERVER_PORT = parseInt(process.env.PORT as string, 10) || 7000;
+const SERVER_APP_KEY = process.env.APP_KEY;
 
 const SERVER = {
 	hostName: SERVER_HOSTNAME,
 	port: SERVER_PORT,
+	appKey: SERVER_APP_KEY,
 };
 
 /**

@@ -65,6 +65,6 @@ export default class ApiAuthController {
 		// 5. return with callbackURL
 		console.log("5. return with callbackURL");
 		const callbackURL = `http://${config.envVars.server.hostName}:${config.envVars.server.port}/api/v1/token?code=${code}&state=${stateParam}`;
-		res.status(200).json({ callbackURL });
+		res.status(200).json({ code: 200, message: "Ok", result: { callbackURL } });
 	}
 }
