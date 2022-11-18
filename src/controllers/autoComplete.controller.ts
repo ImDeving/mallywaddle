@@ -39,9 +39,9 @@ export default class AutoCompleteController {
 		const authHeaderValue = req.headers.authorization || "";
 
 		// In memory cache
-		if (cacheTime && cacheTime > Date.now() - 30 * 1000) {
-			return res.json(cacheData);
-		}
+		// if (cacheTime && cacheTime > Date.now() - 30 * 1000) {
+		// 	return res.json(cacheData);
+		// }
 
 		// 2. Make call to API
 		try {
