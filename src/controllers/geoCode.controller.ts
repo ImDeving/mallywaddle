@@ -13,7 +13,7 @@ export default class GeoCodeController {
 	) {
 		const searchString = req.url.split("?")[1];
 		const searchParams = new URLSearchParams(searchString);
-		const queryParam = JSON.parse(searchParams.get("query")?.trim() || "");
+		const queryParam = searchParams.get("query")?.trim();
 
 		// 1. If queryParam = null, throw BadRequest HttpError
 		if (!queryParam) {

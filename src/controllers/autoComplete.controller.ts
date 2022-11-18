@@ -1,4 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
+import url from "url";
 import { HttpException } from "../common/httpException";
 import { autoCompleteService } from "../services";
 
@@ -11,12 +12,14 @@ export default class AutoCompleteController {
 		res: Response,
 		next: NextFunction
 	) {
-		const searchString = req.url.split("?")[1];
-		const searchParams = new URLSearchParams(searchString);
-		const queryParam = JSON.parse(searchParams.get("query")?.trim() || "");
+		const parsedURL = url.parse(req.url);
+
+		console.log("parsedURL: ", parsedURL);
+
+		console.log("req params: ", req.params);
 
 		// 1. If queryParam = null, throw BadRequest HttpError
-		if (!queryParam) {
+		if (!parsedURL.query) {
 			// 1.1 queryParam = null, throwing BadRequest HttpError
 			const error = new HttpException(
 				"BadRequest",
@@ -25,6 +28,10 @@ export default class AutoCompleteController {
 			return next(error);
 		}
 
+		const searchParams = new URLSearchParams(parsedURL.query);
+		const queryParam = searchParams.get("query")?.trim();
+
+		console.log({ queryParam: JSON.parse(queryParam!) });
 		console.log({ headers: req.headers });
 		const authHeaderValue = req.headers.authorization || "";
 
@@ -36,7 +43,7 @@ export default class AutoCompleteController {
 		// 2. Make call to API
 		try {
 			const places = await autoCompleteService.getPlaces(
-				queryParam,
+				JSON.parse(queryParam!),
 				authHeaderValue
 			);
 			cacheData = places;
