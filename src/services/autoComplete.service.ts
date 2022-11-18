@@ -17,7 +17,7 @@ export default class AutoCompleteService implements IAutoCompleteService {
 		const headers: { [key: string]: string } = {};
 		headers[`${apiKeyName}`] = apiKeyValue;
 		headers["Authorization"] = `${authHeaderValue}`;
-		const url = `${baseURL}${autoCompletePath}?query=${encodeURI(query)}`;
+		const url = `${baseURL}${autoCompletePath}?query=${query}`;
 
 		const reqConfig = {
 			headers,
