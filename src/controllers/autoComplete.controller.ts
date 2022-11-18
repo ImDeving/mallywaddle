@@ -46,7 +46,7 @@ export default class AutoCompleteController {
 		// 2. Make call to API
 		try {
 			const places = await autoCompleteService.getPlaces(
-				searchParams.get("query")!,
+				decodeURI(searchParams.get("query")!),
 				authHeaderValue
 			);
 			cacheData = places;
