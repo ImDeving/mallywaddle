@@ -20,17 +20,22 @@ export default class GeoCodeService implements IGeoCodeService {
 		const headers: { [key: string]: string } = {};
 		headers[`${apiKeyName}`] = apiKeyValue;
 		headers["Authorization"] = `${authHeaderValue}`;
-		const url = `${baseURL}${geoCodePath}?query=${encodeURI(query)}`;
+		const url = `${baseURL}${geoCodePath}?query=${query}`;
 
 		const reqConfig = {
 			headers,
 		};
+
+		console.log({ url, reqConfig });
 
 		// 2. Attempt to make the request
 		const apiRes = await new Promise<GeoCodeResult>((resolve, reject) => {
 			needle.request("get", url, { query }, { headers }, (err, resp) => {
 				if (!err && resp.statusCode == 200) {
 					// Successfull API response
+
+					console.log({ response: resp });
+					console.log({ body: resp.body });
 
 					// 3. Return result
 					return resolve(resp.body);

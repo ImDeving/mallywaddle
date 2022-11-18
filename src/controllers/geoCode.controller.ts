@@ -1,4 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
+import url from "url";
 import { HttpException } from "../common/httpException";
 import { geoCodeService } from "../services";
 
@@ -11,12 +12,14 @@ export default class GeoCodeController {
 		res: Response,
 		next: NextFunction
 	) {
-		const searchString = req.url.split("?")[1];
-		const searchParams = new URLSearchParams(searchString);
-		const queryParam = searchParams.get("query")?.trim();
+		const parsedURL = url.parse(req.url);
+
+		console.log("parsedURL: ", parsedURL);
+
+		console.log("req params: ", req.params);
 
 		// 1. If queryParam = null, throw BadRequest HttpError
-		if (!queryParam) {
+		if (!parsedURL.query) {
 			// 1.1 queryParam = null, throwing BadRequest HttpError
 			const error = new HttpException(
 				"BadRequest",
@@ -25,8 +28,14 @@ export default class GeoCodeController {
 			return next(error);
 		}
 
+		const searchParams = new URLSearchParams(parsedURL.query);
+		const queryParam = searchParams.get("query")?.trim();
+
+		console.log({ queryParam: queryParam! });
+		console.log({ queryParam: searchParams.get("query")! });
+		console.log({ queryParam: searchParams.get("max_results")! });
+		console.log({ parsedURLQuery: parsedURL.query });
 		// console.log({ headers: req.headers });
-		console.log({ queryParam });
 		const authHeaderValue = req.headers.authorization || "";
 
 		// In memory cache
@@ -37,8 +46,7 @@ export default class GeoCodeController {
 		// 2. Make call to API
 		try {
 			const places = await geoCodeService.geoCodeAddress(
-				// encodeURI(searchParams),
-				queryParam,
+				decodeURI(searchParams.get("query")!),
 				authHeaderValue
 			);
 			console.log({ places });
