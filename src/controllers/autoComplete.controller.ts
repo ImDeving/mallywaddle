@@ -31,7 +31,7 @@ export default class AutoCompleteController {
 		const searchParams = new URLSearchParams(parsedURL.query);
 		const queryParam = searchParams.get("query")?.trim();
 
-		console.log({ queryParam: JSON.parse(queryParam!) });
+		// console.log({ queryParam: JSON.parse(queryParam!) });
 		console.log({ headers: req.headers });
 		const authHeaderValue = req.headers.authorization || "";
 
