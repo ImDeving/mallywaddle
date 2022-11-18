@@ -45,7 +45,7 @@ const apiKeyMiddleware = (req: Request, res: Response, next: NextFunction) => {
  */
 
 const app = express();
-app.set("trust proxy", 1);
+app.set("trust proxy", 2);
 
 /**
  *  App Configuration
@@ -62,14 +62,7 @@ app.use(express.json());
  * App routes
  */
 
-app.use(
-	"/api/v1",
-	cors(corsOptions),
-	limiter,
-	speedLimiter,
-	apiKeyMiddleware,
-	router
-);
+app.use("/api/v1", limiter, speedLimiter, apiKeyMiddleware, router);
 
 /**
  * Error handling
