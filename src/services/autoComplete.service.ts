@@ -17,17 +17,21 @@ export default class AutoCompleteService implements IAutoCompleteService {
 		const headers: { [key: string]: string } = {};
 		headers[`${apiKeyName}`] = apiKeyValue;
 		headers["Authorization"] = `${authHeaderValue}`;
-		const url = `${baseURL}${autoCompletePath}?query=${query}`;
+		const url = `${baseURL}${autoCompletePath}?query=${encodeURI(query)}`;
 
 		const reqConfig = {
 			headers,
 		};
+
+		console.log({ url, reqConfig });
 
 		// 2. Attempt to make the request
 		const apiRes = await new Promise<AutoCompleteResult>((resolve, reject) => {
 			needle.request("get", url, { query }, { headers }, (err, resp) => {
 				if (!err && resp.statusCode == 200) {
 					// Successfull API response
+
+					console.log({ body: resp.body });
 
 					// 3. Return result
 					return resolve(resp.body);
