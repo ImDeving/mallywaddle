@@ -31,6 +31,7 @@ export default class AutoCompleteService implements IAutoCompleteService {
 				if (!err && resp.statusCode == 200) {
 					// Successfull API response
 
+					console.log({ response: resp });
 					console.log({ body: resp.body });
 
 					// 3. Return result
